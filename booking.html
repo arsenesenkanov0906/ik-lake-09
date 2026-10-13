@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="booking">
+
+    <h1 id="serviceTitle">Бронирование</h1>
+
+    <input type="text" id="name" placeholder="Ваше ФИО">
+    <input type="tel" id="phone" placeholder="Телефон">
+
+    <label>Дата начала</label>
+    <input type="date" id="startDate" onchange="checkBookingType()">
+
+    <label>Дата окончания</label>
+    <input type="date" id="endDate" onchange="checkBookingType()">
+
+    <div id="timeBlock" class="hidden">
+
+        <label>Начало</label>
+        <input type="time" id="startTime">
+
+        <label>Окончание</label>
+        <input type="time" id="endTime">
+
+    </div>
+
+    <button onclick="bookNow()">🏕 Забронировать</button>
+
+</div>
+
+<script>
+function checkBookingType(){
+    const s = document.getElementById("startDate").value;
+    const e = document.getElementById("endDate").value;
+    document.getElementById("timeBlock").style.display =
+        (s && e && s === e) ? "block" : "none";
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

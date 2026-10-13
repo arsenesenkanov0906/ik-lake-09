@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование базы отдыха</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+
+    <h1>🏕 Бронирование отдыха</h1>
+
+    <p>Выберите категорию</p>
+
+</header>
+
+
+<!-- КАТЕГОРИИ -->
+
+<section class="categories">
+
+    <div class="category-card" onclick="showCategory('yurts')">
+
+        <img src="standart-yurta.jpg" alt="Юрты">
+
+        <h2>🏕 Юрты</h2>
+
+    </div>
+
+
+    <div class="category-card" onclick="showCategory('tapchans')">
+
+        <img src="standart-yurta.jpg" alt="Тапчаны">
+
+        <h2>🛋 Тапчаны</h2>
+
+    </div>
+
+
+    <div class="category-card" onclick="showCategory('umbrellas')">
+
+        <img src="standart-yurta.jpg" alt="Зонты">
+
+        <h2>⛱ Сап</h2>
+
+    </div>
+    
+
+</section>
+
+
+<hr>
+
+
+<!-- СЮДА БУДУТ ЗАГРУЖАТЬСЯ КАРТОЧКИ -->
+
+<div id="items" class="grid"></div>
+
+
+<footer class="footer">
+
+    <div class="map-button">
+
+    <a href="https://2gis.kg/bishkek/geo/70030076139241182/77.940346,42.463490"
+       target="_blank">
+
+        📍 До пляжа: 50 метров
+
+    </a>
+
+</div>
+
+
+<p>
+    📞
+    <a href="tel:+99674290058">
+        Позвонить
+    </a>
+</p>
+
+<p>
+    💬
+    <a href="https://wa.me/996509062607" target="_blank">
+        WhatsApp
+    </a>
+</p>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
